@@ -50,11 +50,8 @@ export const registerUser = async (req, res) => {
 
 // Авторизация пользователя
 export const loginUser = async (req, res) => {
-
-  const recapcha = req.body.captchaToken;
    
   console.log(req.body)
-
 
     const errors = validationResult(req);
 
